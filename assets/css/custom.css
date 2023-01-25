@@ -1,0 +1,53 @@
+.form-body {
+  padding: 5px 20px 5px 20px;
+}
+.text {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.list-head {
+  list-style: none;
+}
+.text1 {
+  color: red;
+}
+.text-head {
+  padding: 30px 40px;
+  box-shadow: 2px 2px 20px 2px;
+}
+.clearr {
+  border: 0;
+  color: #a41818;
+}
+.groceries-container {
+  overflow-y: scroll;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#add-button {
+  padding: 7px 9px;
+  border: none;
+  background-color: cyan;
+}
+
+.groceries-item-container {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+#groceries-text {
+  width: 100%;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+#edit-button,
+#delete-button {
+  padding: 5px;
+  border: 0;
+  background: transparent;
+}
