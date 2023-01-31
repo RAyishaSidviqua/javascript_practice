@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <title>Hello, world!</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h2> Javascript Palindrome Checking Function</h2>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function palindrome(myString) {
+            var removeChar = myString.replace(/[^A-Z 0-9]/ig, "").toLowerCase();
+            var checkPalindrome = removeChar.split('').reverse().join('');
+            if (removeChar == checkPalindrome) {
+                document.write("hiii")
+            }
+            else {
+                document.write("hwllo")
+            }
+        }
+        palindrome('"Oh who was it I saw, oh who?"')
+        // palindrome('"Madam"')
+        // palindrome('"Star Wars"')
+        // palindrome('"2,3,4,3,2"')
+        // palindrome('"7,10,7,8,9"')
+
+        // function palindrome(myString) {
+
+        //     /* remove special characters, spaces and make lowercase*/
+        //     var removeChar = myString.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+
+        //     /* reverse removeChar for comparison*/
+        //     var checkPalindrome = removeChar.split('').reverse().join('');
+
+        //     /* Check to see if myString is a Palindrome*/
+        //     if (removeChar === checkPalindrome) {
+
+        //         document.write("<div>" + myString + " is a Palindrome <div>");
+        //     } else {
+
+        //         document.write("<div>" + myString + " is not a Palindrome </div>");
+        //     }
+        // }
+        // palindrome('"Oh who was it I saw, oh who?"')
+        // palindrome('"Madam"')
+        // palindrome('"Star Wars"')
+        // palindrome('"2,3,4,3,2"')
+        // palindrome('"7,10,7,8,9"')
+    </script>
+
+</body>
+
+</html>

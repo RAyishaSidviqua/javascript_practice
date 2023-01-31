@@ -1,0 +1,50 @@
+ul#buttons {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.number {
+  color: #fff;
+  background: #e27878;
+  border: 1px solid;
+  width: 20%;
+  margin: 5px;
+  padding: 10px;
+  /* height: 50%; */
+  text-align: center;
+}
+
+.equalll {
+  width: 100%;
+  color: #fff;
+  background: #e27878;
+  border: 1px solid;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 280px;
+  margin: 50 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #6d6d6d;
+}
+
+.screen {
+  background-color: #e7dfdf;
+  width: 100%;
+  min-height: 100px;
+  text-align: right;
+  padding: 10px;
+}
+
+.cal-button {
+  background-color: #fff;
+  text-align: center;
+}
