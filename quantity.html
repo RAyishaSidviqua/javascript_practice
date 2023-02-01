@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+    <style>
+        .quantity button {
+            padding: 10px 30px;
+            margin: 5px;
+        }
+
+        p {
+            border: 1px solid;
+            padding: 10px 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="box">
+            <h1>Quantity</h1>
+            <div class="d-flex">
+                <div class="quantity d-flex">
+                    <p id="lower-button" onclick=handleLower()>-</p>
+                    <p id="value">0</p>
+                    <p id="add-button" onclick=handleAdd()>+</p>
+                </div>
+                <div class="quantity">
+                    <p id="price-button">0</p>
+                </div>
+            </div>
+            <div class="d-flex ">
+                <div class="quantity d-flex">
+                    <p id="lower-button" onclick=handleLower1()>-</p>
+                    <p id="value1">0</p>
+                    <p id="add-button" onclick=handleAdd1()>+</p>
+                </div>
+                <div class="quantity">
+                    <p id="price-button1">0</p>
+                </div>
+
+            </div>
+            <div class="quantity d-flex">
+                <p>Total</p>
+                <p id="totallAmount" onclick=functioncall()>0</p>
+            </div>
+        </div>
+
+
+    </div>
+    <script src=" assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        function handleAdd() {
+            var Buttons = document.getElementById('value').textContent;
+            var values = parseInt(Buttons);
+            var b = document.getElementById('value').innerText = values + 1;
+            var a = document.getElementById('price-button').innerText = b * 300;
+            getTotal()
+
+        }
+        function handleLower() {
+            var Buttons = document.getElementById('value').textContent;
+            var values = parseInt(Buttons)
+            var b = document.getElementById('value').innerText = values > 0 ? values - 1 : values;
+            var a = document.getElementById('price-button').innerText = b * 300;
+            getTotal()
+        };
+
+        function handleAdd1() {
+            var Buttons = document.getElementById('value1').textContent;
+            var values = parseInt(Buttons);
+            var b = document.getElementById('value1').innerText = values + 1;
+            var a1 = document.getElementById('price-button1').innerText = b * 100;
+
+            getTotal()
+        }
+        function handleLower1() {
+            var Buttons = document.getElementById('value1').textContent;
+            var values = parseInt(Buttons)
+            var b = document.getElementById('value1').innerText = values > 0 ? values - 1 : values;
+            var a = document.getElementById('price-button1').innerText = b * 100;
+            getTotal()
+        }
+
+        function getTotal() {
+            let total1 = parseInt(document.getElementById('price-button').textContent);
+            let total2 = parseInt(document.getElementById('price-button1').textContent);
+            let totalAmount = total1 + total2;
+            var total = document.getElementById('totallAmount').innerText = totalAmount;
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
